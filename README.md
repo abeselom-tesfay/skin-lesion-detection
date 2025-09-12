@@ -1,6 +1,7 @@
 ## Skin Lesion Detection and Classification
 
 ### **Overview**
+
 This project implements a sophisticated dual-stage deep learning pipeline for accurate skin lesion detection and classification using the HAM10000 dataset. The system combines segmentation and classification stages to achieve high diagnostic accuracy, providing dermatologists with a powerful tool for early skin cancer detection.
 
 ### Key Features
@@ -19,7 +20,9 @@ This project implements a sophisticated dual-stage deep learning pipeline for ac
 - Comprehensive Visualization - Extensive plotting capabilities for model interpretation and results analysis
 
 #### **Diagnostic Capabilities**
+
 - **7-Class Classification:**
+
    - Melanoma (MEL)
    - Melanocytic nevus (NV)
    - Basal cell carcinoma (BCC)
@@ -29,6 +32,7 @@ This project implements a sophisticated dual-stage deep learning pipeline for ac
    - Vascular lesion (VASC)
 
 ### Dataset Information
+
 **HAM10000** ("Human Against Machine with 10000 training images") dataset contains:
 
 - 10,015 dermoscopic images
@@ -37,25 +41,31 @@ This project implements a sophisticated dual-stage deep learning pipeline for ac
 - Diverse patient demographics and imaging conditions
 
 ### Performance Metrics
+
 The model achieves:
+
 - **High Precision:** 95%+ accuracy in positive predictions
 - **Improved Recall:** Enhanced detection of true positive cases
 - **Excellent AUC:** 88%+ area under ROC curve
 - **Balanced Performance:** Effective across all 7 lesion classes
 
 ### Technical Details
-#### ***Model Architecture*** 
+
+#### **Model Architecture** 
+
 - **Segmentation:** Simplified U-Net with encoder-decoder structure
 - **Classification:** EfficientNetB0 backbone with custom attention heads
 - **Attention Mechanisms:** Channel-wise and spatial attention modules
 - **Loss Function:** Focal Loss with class weighting
 
 #### Data Augmentation
+
 - Rotation, flipping, scaling, and color adjustments
 - Heavy augmentation to improve generalization
 - Validation set kept pristine for accurate evaluation
 
 #### Training Strategy
+
 - Transfer learning from ImageNet weights
 - Progressive unfreezing of layers
 - Learning rate scheduling and early stopping
@@ -63,6 +73,7 @@ The model achieves:
 
 
 ### Clinical Applications
+
 - **Early Detection:** Identify malignant lesions at early stages
 - **Telemedicine:** Enable remote dermatological consultations
 - **Medical Education:** Training tool for dermatology students
