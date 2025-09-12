@@ -6,10 +6,12 @@ This project implements a sophisticated dual-stage deep learning pipeline for ac
 ### Key Features
 
 #### **Dual-Stage Architecture**
+
 - Stage 1: Lesion Segmentation - U-Net based model isolates lesions from surrounding skin tissue
 - Stage 2: Lesion Classification - Enhanced EfficientNetB0 with attention mechanisms classifies segmented lesions
 
 #### **Advanced Technical Features**
+
 - Attention Mechanisms - Channel and spatial attention layers for focused feature extraction
 - Test Time Augmentation - Improved prediction robustness through multiple augmented inferences
 - Focal Loss Implementation - Handles class imbalance more effectively than standard cross-entropy
